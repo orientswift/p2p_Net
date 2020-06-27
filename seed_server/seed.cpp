@@ -64,7 +64,7 @@ void seed::start() {
 
     //绑定到本地ip
 
-    ip::tcp::endpoint endpoint(ip::address_v4::from_string("0.0.0.0"),9400);
+    ip::tcp::endpoint endpoint(ip::address_v4::from_string("0.0.0.0"),6900);
     p_accept->open(endpoint.protocol());
     p_accept->set_option(ip::tcp::acceptor::reuse_address(true));  //设置地址复用
     p_accept->bind(endpoint);
